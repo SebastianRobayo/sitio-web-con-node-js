@@ -12,9 +12,9 @@ connection.connect(
         else{console.log("Conexión fallida");}
     }
 );
-
-connection.query("SELECT * FROM tablaproductos",function(err,resultados){
+module.exports = connection;
+/*connection.query("SELECT * FROM tablaproductos",function(err,resultados){
     console.log(resultados);
-});
+});*/
 
-connection.end();
+//connection.end();
